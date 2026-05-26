@@ -67,7 +67,3 @@ Through this project, I improved my skills in:
 
 
 
-
-![Home Page](images/home.png)
-![Products Section](images/products.png)
-![Categories](images/categories.png)
