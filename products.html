@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Brand E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header mobile-header">
+      <div class="header-top mobile-header-top">
+        <div class="container">
+          <div class="header-top-content mobile-header-top-content">
+
+            <!-- Hamburger Icon -->
+           <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+           </div>
+
+           <!-- Sidebar Menu -->
+           <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+              <span>Sign in | Register</span>
+              <i class="fas fa-times" id="close-sidebar"></i>
+            </div>
+            <ul class="sidebar-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Favourites</a></li>
+              <li><a href="#">My Orders</a></li>
+              <li><a href="#">English | USD</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">User Agreement</a></li>
+              <li><a href="#">Partnership</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+           </aside>
+
+            <div class="logo">
+              <i class="fas fa-shopping-bag"></i>
+              <span>Brand</span>
+            </div>
+
+            <div class="search-section">
+              <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input" />
+                <select class="category-dropdown">
+                  <option>All category</option>
+                  <option>Electronics</option>
+                  <option>Clothing</option>
+                  <option>Home & Garden</option>
+                </select>
+                <button class="search-btn">Search</button>
+              </div>
+            </div>
+
+            <div class="user-actions">
+              <div class="user-item">
+                <i class="fas fa-user" id="profile"></i>
+                <span id="comment">Profile</span>
+              </div>
+              <div class="user-item" id="comment">
+                <i class="fas fa-comment"></i>
+                <span>Message</span>
+              </div>
+              <div class="user-item" id="heart">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <span>Orders</span>
+              </div>
+              <div class="user-item" id="cart">
+                <a class="linkkk" href="cart.html">
+                    <i class="fas fa-shopping-cart"></i></a>
+                    <span id="heart">My cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <div class="container">
+          <ul class="nav-menu">
+            <input type="text" placeholder="Search" class="input-search" />
+            <button class="input-search-btn">Search</button>
+            <li><a href="#" class="nav-link"><i class="fa fa-bars"></i>All category</a></li>
+            <li><a href="products.html" class="nav-link">Hot offers</a></li>
+            <li><a href="#" class="nav-link">Gift boxes</a></li>
+            <li><a href="#" class="nav-link">Projects</a></li>
+            <li><a href="#" class="nav-link">Menu item</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-link"
+                >Help <i class="fas fa-chevron-down"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span class="separator">></span>
+                <a href="#">Clothings</a>
+                <span class="separator">></span>
+                <a href="#">Men's wear</a>
+                <span class="separator">></span>
+                <span class="current">Summer clothing</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filter-section">
+                        <h3 class="filter-title">
+                            Category
+                            <i class="fas fa-chevron-up"></i>
+                        </h3>
+                        <div class="filter-content">
+                            <div class="filter-item active">
+                                <span>Mobile accessory</span>
+                            </div>
+                            <div class="filter-item">
+                                <span>Electronics</span>
+                            </div>
+                            <div class="filter-item">
+                                <span>Smartphones</span>
+                            </div>
+                            <div class="filter-item">
+                                <span>Modern tech</span>
+                            </div>
+                            <a href="#" class="see-all">See all</a>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">
+                            Brands
+                            <i class="fas fa-chevron-up"></i>
+                        </h3>
+                        <div class="filter-content">
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Samsung
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Apple
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Huawei
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Pocco
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Lenovo
+                            </label>
+                            <a href="#" class="see-all">See all</a>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">
+                            Features
+                            <i class="fas fa-chevron-up"></i>
+                        </h3>
+                        <div class="filter-content">
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Metallic
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Plastic cover
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                8GB Ram
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Super power
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Large Memory
+                            </label>
+                            <a href="#" class="see-all">See all</a>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">Price range<i class="fas fa-chevron-down"></i></h3>
+                        <div class="filter-content collapsed">
+                            <div class="price-slider">
+                                <div class="price-inputs">
+                                    <input type="number" placeholder="Min" value="0" class="price-input">
+                                    <input type="number" placeholder="Max" value="999999" class="price-input">
+                                </div>
+                                <button class="apply-btn">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">Condition<i class="fas fa-chevron-down"></i></h3>
+                        <div class="filter-content collapsed">
+                            <label class="radio-item">
+                                <input type="radio" name="condition" checked>
+                                <span class="radio-mark"></span>
+                                Any
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="condition">
+                                <span class="radio-mark"></span>
+                                Refurbished
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="condition">
+                                <span class="radio-mark"></span>
+                                Brand new
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="condition">
+                                <span class="radio-mark"></span>
+                                Old items
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">
+                            Ratings
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="filter-content collapsed">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <div class="stars">★★★★★</div>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <div class="stars">★★★★☆</div>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <div class="stars">★★★☆☆</div>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <div class="stars">★★☆☆☆</div>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <div class="stars">★☆☆☆☆</div>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Content -->
+                <div class="products-content">
+                    <!-- Products Header -->
+                    <div class="products-header">
+                        <div class="products-info">
+                            <h2>12,911 items in Mobile accessory</h2>
+                        </div>
+                        <div class="products-controls">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Verified only
+                            </label>
+                            <div class="disp">
+                              <select class="sort-dropdown">
+                                  <option>Featured</option>
+                                  <option>Price: Low to High</option>
+                                  <option>Price: High to Low</option>
+                                  <option>Newest</option>
+                              </select>
+                              <div class="view-toggle">
+                                  <button class="view-btn active" data-view="grid">
+                                      <i class="fas fa-th"></i>
+                                  </button>
+                                  <button class="view-btn" data-view="list">
+                                      <i class="fas fa-list"></i>
+                                  </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Active Filters -->
+                    <div class="active-filters">
+                        <div class="filter-tags">
+                            <span class="filter-tag">Samsung <i class="fas fa-times"></i></span>
+                            <span class="filter-tag">Apple <i class="fas fa-times"></i></span>
+                            <span class="filter-tag">Poco <i class="fas fa-times"></i></span>
+                            <span class="filter-tag">Metallic <i class="fas fa-times"></i></span>
+                            <span class="filter-tag">4 star <i class="fas fa-times"></i></span>
+                            <span class="filter-tag">3 star <i class="fas fa-times"></i></span>
+                        </div>
+                        <a href="#" class="clear-filters">Clear all filter</a>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Product cards will be created by JavaScript -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <div class="pagination-info">
+                            <select class="items-per-page">
+                                <option>Show 10</option>
+                                <option>Show 20</option>
+                                <option>Show 50</option>
+                            </select>
+                        </div>
+                        <div class="pagination-controls">
+                            <button class="pagination-btn" disabled>
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Recommended Section -->
+    <section class="saved-items">
+                <h3>You may also like</h3>
+                <div class="saved-grid">
+                    <div class="saved-item">
+                        <img src="images/19.jpg" alt="Tablet">
+                        <div class="saved-info">
+                            <p class="price">$99.50</p>
+                            <h4>GoPro HERO6 4K Action Camera - Black</h4>
+                        </div>
+                    </div>
+                    <div class="saved-item">
+                        <img src="images/21.jpg" alt="Blue Smartphone">
+                        <div class="saved-info">
+                            <p class="price">$99.50</p>
+                            <h4>GoPro HERO6 4K Action Camera - Black</h4>
+                        </div>
+                    </div>
+                    <div class="saved-item">
+                        <img src="images/25.jpg" alt="Smartwatch">
+                        <div class="saved-info">
+                            <p class="price">$99.50</p>
+                            <h4>GoPro HERO6 4K Action Camera - Black</h4>
+                        </div>
+                    </div>
+                </div>
+              </section>
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2 class="newsletter-head">Subscribe on our newsletter</h2>
+            <p class="newsletter-para">Get daily news on upcoming offers from many suppliers all over the world</p>
+            <form class="newsletter-form">
+                <div class="email-input">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <i class="fas fa-shopping-bag"></i>
+              <span>Brand</span>
+            </div>
+            <p>
+              Best information about the company gies here but now lorem ipsum
+              is
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-column">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Find store</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+
+            <div class="link-column">
+              <h3>Partnership</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Find store</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+
+            <div class="link-column">
+              <h3>Information</h3>
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Money Refund</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="link-column">
+              <h3>For users</h3>
+              <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">My Orders</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-app">
+            <h3>Get app</h3>
+            <div class="app-buttons">
+              <button class="app-btn">
+                <i class="fab fa-apple"></i>
+                <span>Dowmload on &nbsp; &nbsp; <b>App Store</b></span>
+              </button>
+              <button class="app-btn">
+                <i class="fab fa-google-play"></i>
+                <span>GET IT ON <b>Google Play</b></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 Ecommerce.</p>
+          <div class="language-selector">
+            <span> <i><img src="images/US.png" alt="" width="20" height="15"></i> English</span>
+            <i class="fas fa-chevron-up"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
